@@ -1,3 +1,13 @@
+# jetbrains
+.idea
+
+# gatsby
+.cache
+public
+
+# yarn only
+package-lock.json
+
 # Logs
 logs
 *.log
