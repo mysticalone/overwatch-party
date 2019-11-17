@@ -17,19 +17,17 @@ class IndexPage extends Component {
 
 
 	fetchHeroes = () => {
-		let thisComponent = this;
-
 		fetch('/heroes.json')
 			.then(res => res.json())
 			.then(
 				(result) => {
-					thisComponent.setState({
+					this.setState({
 						heroes: result,
 						heroesLoaded: true
 					});
 				},
 				(error) => {
-					thisComponent.setState({
+					this.setState({
 						heroesLoaded: false,
 						error
 					});
